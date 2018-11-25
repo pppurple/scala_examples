@@ -1,4 +1,4 @@
-package example.function
+package example.functions
 
 object Functions extends App {
   // def
