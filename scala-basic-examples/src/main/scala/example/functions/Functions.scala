@@ -33,4 +33,12 @@ object Functions extends App {
   }
 
   println(higherOrderCalc(higherOrderPlus))
+
+  // args with name
+  def plusWithName(val1: Int = 100, val2: Int = 20): Int = {
+    val1 + val2
+  }
+  println(plusWithName(val1 = 10, val2 = 15))
+  println(plusWithName(val1 = 40))
+  println(plusWithName(val2 = 200))
 }
