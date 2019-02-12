@@ -19,6 +19,9 @@ object Options extends App {
   optString.map(_ + " mapped!!")
     .foreach(println)
 
+  optString.flatMap(v => Option(v + " flat mapped!!"))
+    .foreach(println)
+
   val value = optString.getOrElse("default")
   println(value)
   val gotValue = optStringNull.getOrElse("default")
